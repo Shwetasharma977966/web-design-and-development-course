@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Web Design & Development</title>
+   
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.icon .logo {
+    color: #ff7200;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+}
+
+/* Search Bar */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.srch {
+    width: 180px;
+    height: 35px;
+    border: 1px solid #ff7200;
+    background: transparent;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 80px;
+    height: 35px;
+    background: #ff7200;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #ff7200;
+}
+.about-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.about-section h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.content {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: #ff7200;
+    margin-bottom: 10px;
+}
+
+.content ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.content ul li {
+    font-size: 16px;
+    padding: 5px 0;
+    position: relative;
+}
+
+.content ul li::before {
+    content: "✔";
+    color: #ff7200;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.cta {
+    text-align: center;
+    padding: 30px;
+    background: #ff7200;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.btn {
+    text-decoration: none;
+    background: #fff;
+    color: #ff7200;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
+  @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .menu ul {
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            .search {
+                margin-top: 10px;
+            }
+
+            .content h1 {
+                font-size: 36px;
+            }
+        }
+</style>
+<body>
+     <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">WebDev</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN & SIGNUP</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" class="srch" placeholder="Search...">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>We are a team of passionate web designers and developers dedicated to crafting exceptional digital experiences.</p>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h2>Who We Are</h2>
+            <p>At our core, we are creators. We specialize in designing visually stunning and user-friendly websites while ensuring optimal functionality through advanced web development techniques.</p>
+        </div>
+
+        <div class="content">
+            <h2>Our Expertise</h2>
+            <ul>
+                <li>Custom Web Design</li>
+                <li>Responsive Website Development</li>
+                <li>E-commerce Solutions</li>
+                <li>UI/UX Design</li>
+                <li>SEO Optimization</li>
+                <li>Web App Development</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Why Choose Us?</h2>
+            <p>We focus on delivering high-quality, user-friendly, and performance-driven websites that help businesses grow in the digital world.</p>
+        </div>
+
+        <div class="cta">
+            <h2>Let’s Build Something Amazing!</h2>
+            <p>Contact us today and take your online presence to the next level.</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Web Design & Development</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.icon .logo {
+    color: #ff7200;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ff7200;
+}
+
+/* Search Bar */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.srch {
+    width: 180px;
+    height: 35px;
+    border: 1px solid #ff7200;
+    background: transparent;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 80px;
+    height: 35px;
+    background: #ff7200;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #ff7200;
+}
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.services-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('services-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.services-header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.services-header p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.service-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-box h2 {
+    color: #ff7200;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.cta {
+    text-align: center;
+    padding: 30px;
+    background: #ff7200;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+}
+
+.cta p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.btn {
+    text-decoration: none;
+    background: #fff;
+    color: #ff7200;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
+  @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .menu ul {
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            .search {
+                margin-top: 10px;
+            }
+
+            .content h1 {
+                font-size: 36px;
+            }
+        }
+</style>
+<body>
+ <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">WebDev</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICE</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN & SIGNUP</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" class="srch" placeholder="Search...">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+    <div class="services-header">
+        <h1>Our Services</h1>
+        <p>We provide top-notch web design and development solutions tailored to your business needs.</p>
+    </div>
+
+    <div class="services-container">
+        <div class="service-box">
+            <h2>Custom Web Design</h2>
+            <p>We create visually appealing and user-friendly websites tailored to your brand identity.</p>
+        </div>
+
+        <div class="service-box">
+            <h2>Responsive Development</h2>
+            <p>Your website will look great and function flawlessly on any device, from desktops to mobiles.</p>
+        </div>
+
+        <div class="service-box">
+            <h2>E-Commerce Solutions</h2>
+            <p>We develop powerful online stores with secure payment integration and seamless shopping experiences.</p>
+        </div>
+
+        <div class="service-box">
+            <h2>UI/UX Design</h2>
+            <p>We focus on creating intuitive and engaging designs to enhance user experience.</p>
+        </div>
+
+        <div class="service-box">
+            <h2>SEO Optimization</h2>
+            <p>Boost your website's visibility on search engines with our expert SEO strategies.</p>
+        </div>
+
+        <div class="service-box">
+            <h2>Web App Development</h2>
+            <p>We build dynamic and feature-rich web applications tailored to your business requirements.</p>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to Elevate Your Online Presence?</h2>
+        <p>Contact us today and let’s build something amazing together!</p>
+        <a href="contact.html" class="btn">Get Started</a>
+    </div>
+
+</body>
+</html>
